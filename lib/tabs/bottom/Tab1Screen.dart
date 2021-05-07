@@ -7,7 +7,7 @@ class Tab1Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        "These top tabs...",
+        "These bottom tabs...",
         style: TextStyle(
           fontSize: 24,
         ),

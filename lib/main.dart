@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       
-      // This is aa example that combines the different navigation techniuques
+      // This is an example that combines the different navigation techniques
       // The first route will have the drawer and tab bar
-      // the second route will be a single page
-      // the 3rd route will contain the bottom tab
+      // the second route will contain the bottom navigation
+      // the 3rd route will contain the single page
       initialRoute: 'home',
       // Routes with specific navigations
       routes: {

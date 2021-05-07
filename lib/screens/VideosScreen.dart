@@ -25,6 +25,7 @@ class _VideosScreenState extends State<VideosScreen> {
         index: _index,
         children: _tabs,
       ),
+      // body: _tabs[_index]
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _index,
         onTap: (index) {
