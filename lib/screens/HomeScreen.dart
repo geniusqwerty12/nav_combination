@@ -6,7 +6,7 @@ import 'package:nav_combination/tabs/top/WelcomeScreen.dart';
 import '../SideDrawer.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({Key key}) : super(key: key);
+  HomeScreen({Key? key}) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -15,12 +15,8 @@ class HomeScreen extends StatefulWidget {
 // Home Screen will hold the drawer and tab bar navigation
 class _HomeScreenState extends State<HomeScreen> {
   // List of tab screens
-  List<Widget> _tabScreens = [
-    WelcomeScreen(),
-    InfoScreen(),
-    AboutScreen()
-  ];
-  
+  List<Widget> _tabScreens = [WelcomeScreen(), InfoScreen(), AboutScreen()];
+
   // List of the tab items
   List<Widget> _tabLists = [
     Tab(
@@ -53,9 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
         // add the drawer widget here, we'll create it in a separate file
         drawer: SideDrawer(),
         // initialize the tab screens
-        body: TabBarView(
-          children: _tabScreens
-        ),
+        body: TabBarView(children: _tabScreens),
       ),
     );
   }

@@ -4,7 +4,7 @@ import 'package:nav_combination/tabs/bottom/Tab2Screen.dart';
 import 'package:nav_combination/tabs/bottom/Tab3Screen.dart';
 
 class VideosScreen extends StatefulWidget {
-  VideosScreen({Key key}) : super(key: key);
+  VideosScreen({Key? key}) : super(key: key);
 
   @override
   _VideosScreenState createState() => _VideosScreenState();
@@ -30,7 +30,7 @@ class _VideosScreenState extends State<VideosScreen> {
         currentIndex: _index,
         onTap: (index) {
           setState(() {
-            _index = index;            
+            _index = index;
           });
         },
         items: [
